@@ -1,0 +1,79 @@
+body,
+html {
+  height: auto;
+}
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 53.89px 1fr 53.89px;
+  grid-template-columns: 1fr;
+}
+
+/* rename for grid-area */
+.historical {
+  grid-area: historical;
+}
+.education {
+  grid-area: education;
+}
+.genral {
+  grid-area: genral;
+}
+.experiences {
+  grid-area: experiences;
+}
+
+.skills{
+  grid-area: skills;
+}
+
+/* end of rename for grid-area */
+
+/* styling the main section */
+.main-me{
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: 1fr;
+  grid-template-areas: "historical" "career" "interests" "skills";
+  padding: 30px 150px;
+}
+/* end of styling the main section */
+
+section>div>h1{
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+section>div>h1:hover{
+  cursor: pointer;
+}
+
+section>div>p{
+ color: rgb(255, 255, 255);
+ font-size: 2rem;
+ display: none;
+}
+
+.h-and-p{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.show{
+  display: block;
+}
+
+.details-container{
+  padding: 15px;
+  margin-bottom:50px ;
+}
+
+.karate{
+  width: 40%;
+  height: 45%;
+  margin-top: 15px;
+}
