@@ -59,10 +59,22 @@ section>div>p{
  display: none;
 }
 
-section>div>ul{
+
+
+section>div>div{
   display: none;
   list-style: none;
   margin-left: -40px;
+}
+
+section>div>div>ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+section>div>div>ul>li{
+  margin-right: 5px;
 }
 
 .h-and-p{
@@ -74,8 +86,7 @@ section>div>ul{
 }
 
 .show{
-  display: flex;
-  flex-direction: row;
+  display: block;
 }
 
 .social{
